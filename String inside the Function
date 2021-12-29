@@ -1,0 +1,19 @@
+# Write a Python program to reverse a string.
+
+
+
+# Sample String : "1234abcd"
+
+# Expected Output : "dcba4321"
+
+######################### "CODE STARTS FROM HERE"
+
+def Reverse_Function(x):
+    Reversed_String = x[::-1]
+    print(Reversed_String)
+
+User_String = input("Enter Your String : ")
+
+Reverse_Function(User_String)
+
+

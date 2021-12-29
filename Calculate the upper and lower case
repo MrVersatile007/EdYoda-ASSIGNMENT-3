@@ -1,0 +1,36 @@
+Write a Python function that accepts a string and calculate the number of upper case letters and lower case letters.
+
+
+
+Sample String : 'The quick Brow Fox'
+
+Expected Output :
+
+No. of Upper case characters : 3
+
+No. of Lower case Characters : 12
+
+##############################  "CODE STARTS FROM HERE" 
+###############################     APPROACH 1
+import re
+
+def Calculating_Function(x):
+    UPPER_CASE = len(re.findall('[A-Z]', x))
+    lower_case = len(re.findall('[a-z]', x))
+    print("Total number of upper case letters are : ", UPPER_CASE)
+    print("Total number of lower case letters are : ", lower_case)
+    
+    
+Sample_String = "Hi, My name is TARUN"
+Calculating_Function(Sample_String)
+
+###############################     APPROACH 2
+def Calculating_Function(x):
+    UPPER_CASE = [U for U in x if U.isupper()]
+    lower_case = [l for l in x if l.islower()]
+    print("Total number of upper case letters are : ", len(UPPER_CASE))
+    print("Total number of lower case letters are : ", len(lower_case))
+    
+    
+Sample_String = "and I am from HYDERABAD !"
+Calculating_Function(Sample_String)

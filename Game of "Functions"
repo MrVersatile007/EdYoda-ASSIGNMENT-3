@@ -1,0 +1,18 @@
+Write a Python function to sum all the numbers in a list.
+
+Sample List : (8, 2, 3, 0, 7)
+Expected Output : 20
+
+Explanation:
+Summation should like 8+2+3+0+7 = 20
+
+########## Code Starts From Here ###########
+
+def Sum_Function(x):
+    Output = 0
+    for i in range(len(x)):
+        Output = Output + x[i]
+    print(Output)
+
+Sample_List = (10, 20, 36, 10)
+Sum_Function(Sample_List)

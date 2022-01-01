@@ -7,6 +7,7 @@
 #Summation should like 8+2+3+0+7 = 20
 
 ########## Code Starts From Here ###########
+########## APPROACH 1
 
 def Sum_Function(x):		#Sample_List
     Output = 0
@@ -21,3 +22,11 @@ def Sum_Function(x):		#Sample_List
         #	76
 Sample_List = (10, 20, 36, 10)
 Sum_Function(Sample_List)
+
+######################          APPROACH 2
+
+def Sum_Function(List):
+    output= sum(List)
+    print(output)
+sample_list = (1, 2, 3, 4, 5, 6)
+Sum_Function(sample_list)

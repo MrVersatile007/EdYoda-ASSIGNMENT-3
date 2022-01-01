@@ -6,8 +6,8 @@
 #Explanation:
 #Summation should like 8+2+3+0+7 = 20
 
-########## Code Starts From Here ###########
-########## APPROACH 1
+##########      Code Starts From Here ###########
+##########      APPROACH 1   TIME COMPLEXITY= O(n)
 
 def Sum_Function(x):		#Sample_List
     Output = 0
@@ -23,7 +23,7 @@ def Sum_Function(x):		#Sample_List
 Sample_List = (10, 20, 36, 10)
 Sum_Function(Sample_List)
 
-######################          APPROACH 2
+#######     APPROACH 2  TIME COMPLEXITY=  O(1)
 
 def Sum_Function(List):
     output= sum(List)

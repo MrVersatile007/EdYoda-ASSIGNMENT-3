@@ -11,12 +11,14 @@ No. of Upper case characters : 3
 No. of Lower case Characters : 12
 
 ##############################  "CODE STARTS FROM HERE" 
-###############################     APPROACH 1
+##############################     APPROACH 1
 import re
 
 def Calculating_Function(x):
     UPPER_CASE = len(re.findall('[A-Z]', x))
+                    #   H, M, T, A, R, U, N
     lower_case = len(re.findall('[a-z]', x))
+                    #   i, y, n, a, m, e, i, s
     print("Total number of upper case letters are : ", UPPER_CASE)
     print("Total number of lower case letters are : ", lower_case)
     
@@ -24,7 +26,7 @@ def Calculating_Function(x):
 Sample_String = "Hi, My name is TARUN"
 Calculating_Function(Sample_String)
 
-###############################     APPROACH 2
+##############################     APPROACH 2
 def Calculating_Function(x):
     UPPER_CASE = [U for U in x if U.isupper()]
     lower_case = [l for l in x if l.islower()]
@@ -32,5 +34,5 @@ def Calculating_Function(x):
     print("Total number of lower case letters are : ", len(lower_case))
     
     
-Sample_String = "and I am from HYDERABAD !"
+Sample_String = input("Type something !")
 Calculating_Function(Sample_String)
